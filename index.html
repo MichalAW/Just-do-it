@@ -10,83 +10,95 @@
         <title>My first Big Individual project</title>
    </head>
    <body>
-      <section class="container">
-          <header>top bar<header/>
+      <section class="aside clearfix">
+         <header id="topbar">
+           <a class="active" href="#"><img src="quit.svg" alt="quit"></a>
+           <a href="#"><img src="profile.svg" alt="profile"></a>
+           <a href="#"><img src="notification.svg" alt="notification"></a>
+           <a href="#"><img src="wallet.svg" alt="wallet"></a>
+        </header>
       </section>
-      <section class="aside">
-              <div id="sidebar">
-                  <div class=toggle-btn onclick="toggleSidebar()">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <h3>Just do it</h3>
-                <ul>
-                  <li>
-                    <img src="general.svg" alt="General">
-                    <a href="#">General</a>
-                  </li>
-                  <li>
-                    <i class="fas fa-envelope-open-text"></i>
-                    <a href="#">Details</a>
-                  </li>
-                  <li>
-                    <i class="fas fa-link"></i>
-                    <a href="#">Links</a>
-                  </li>
-                  <li>
-                    <i class="fas fa-archive"></i>
-                    <a href="#">Banners</a>
-                  </li>
-                  <li>
-                    <i class="fas fa-database"></i>
-                    <a href="#">Personal data</a>
-                  </li>
-                  <li>
-                    <i class="fas fa-shopping-cart"></i>
-                    <a href="#">Payout</a>
-                  </li>
-                  <li>
-                    <i class="fas fa-undo-alt"></i>
-                    <a href="#">Postback</a>  
-                  </li>
-                </ul>
-              </div>
-      </section>
-      <section class="container">
-          <div class="row">
-              <div class="col-3">
-                 <p>Iconcon Lorem ipsum dolor sit amet, consectetur adipis Lorem ipsum dolor sit</p> 
-              </div>
-              <div class="col-3">
-                  <p>Iconcon Lorem ipsum dolor sit amet, consectetur adipis Lorem ipsum dolor sit</p> 
-              </div>
-              <div class="col-3">
-                  <p>Iconcon Lorem ipsum dolor sit amet, consectetur adipis Lorem ipsum dolor sit</p> 
-              </div>
-              <div class="col-3">
-                  <p>Iconcon Lorem ipsum dolor sit amet, consectetur adipis Lorem ipsum dolor sit</p> 
-              </div>
+      <section class="aside clearfix">
+        <div id="sidebar">
+          <div class=toggle-btn onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div class="row">
-              <div class="col-12">
-                  <canvas id="bar-chart" width="800" height="450"></canvas>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-4">
-                 Iconcon Lorem ipsum dolor sit amet, consectetur adipis Lorem ipsum dolor sit  
-              </div>
-              <div class="col-4">
-                Icon Lorem ipsum dolor sit amet, consectetur adipis Lorem ipsum dolor sit 
-              </div>
-              <div class="col-4">
-                Iconcon Lorem ipsum dolor sit amet, consectetur adipis Lorem ipsum dolor sit
-              </div>
-          </div>
+          <h3>Just do it</h3>
+          <ul>
+            <li>
+              <img src="general.svg" alt="General">
+              <a href="#">General</a>
+            </li>
+            <li>
+              <img src="details.svg" alt="Details">
+              <a href="#">Details</a>
+            </li>
+            <li>
+              <img src="links.svg" alt="Links">
+              <a href="#">Links</a>
+            </li>
+            <li>
+              <img src="banners.svg" alt="Banners">
+              <a href="#">Banners</a>
+            </li>
+            <li>
+              <img src="data.svg" alt="Personal data">
+              <a href="#">Personal data</a>
+            </li>
+            <li>
+              <img src="payout.svg" alt="Payout">
+              <a href="#">Payout</a>
+            </li>
+            <li>
+              <i class="fas fa-undo-alt"></i>
+              <a href="#">Postback</a>  
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="container">
-          <footer>Footer</footer>
+        <div class="first-main">
+          <h5>General statistics</h5>
+          <div class="row">
+            <div class="col-3 col-m-12 col-s-12">
+              <p>Visit signups 124</p> 
+            </div>
+            <div class="col-3 col-m-12 col-s-12">
+              <p>FTD 445</p> 
+            </div>
+            <div class="col-3 col-m-12 col-s-12">
+              <p>NET deposit 564</p> 
+            </div>
+            <div class="col-3 col-m-12 col-s-12">
+              <p>Turn over 432</p> 
+            </div>
+          </div>
+        </div>
+        <div class="second-main">
+          <div class="row">
+            <div class="col-12 col-m-12 col-s-12">
+              <canvas id="bar-chart" width="800" height="450"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="third-main">
+          <div class="row">
+            <div class="col-4 col-m-12 col-s-12">
+              LINKS
+            </div>
+            <div class="col-4 col-m-12 col-s-12">
+              LINKS
+            </div>
+            <div class="col-4 col-m-12 col-s-12">
+              LINKS
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+         <footer>Footer</footer>
       </section>
   </body>
 </html>
