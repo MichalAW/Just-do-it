@@ -8,12 +8,10 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
+  max-width: 1200px;
 }
-
-//top-bar
 
 #topbar {
   overflow: hidden;
@@ -39,11 +37,11 @@ body {
   color: white;
 }
 
-//Sidebar:
 .aside {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  max-width: 1200px;
 }
 
 #sidebar {
