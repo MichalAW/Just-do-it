@@ -31,8 +31,3 @@ function toggleSidebar(){
 toggle.addEventListener("click", function() {
   toggleSidebar();
 });
-
-document.addEventListener("DOMContentLoaded", ready);
-  function ready() {
-    alert('DOM is ready');
-  }
