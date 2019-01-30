@@ -1,6 +1,4 @@
-function toggleSidebar(){
-  document.getElementById('sidebar').classList.toggle('active');
-}
+var toggle = document.getElementById("toggle");
 
 new Chart(document.getElementById("bar-chart"), {
     type: 'bar',
@@ -25,3 +23,16 @@ new Chart(document.getElementById("bar-chart"), {
       }
     }
 });
+
+function toggleSidebar(){
+  document.getElementById('sidebar').classList.toggle('active');
+}
+
+toggle.addEventListener("click", function() {
+  toggleSidebar();
+});
+
+document.addEventListener("DOMContentLoaded", ready);
+  function ready() {
+    alert('DOM is ready');
+  }
