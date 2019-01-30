@@ -28,6 +28,9 @@ function toggleSidebar(){
   document.getElementById('sidebar').classList.toggle('active');
 }
 
-toggle.addEventListener("click", function() {
+toggle.addEventListener("click", function(){
   toggleSidebar();
 });
+
+document.addEventListener("DOMContentLoaded", ready);
+  function ready(){};
