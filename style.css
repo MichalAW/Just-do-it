@@ -90,9 +90,9 @@ h5 {
 
 .row::before, 
 .row::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .clearfix::after {
@@ -231,6 +231,12 @@ header, footer, {
         float: none;
     }
     
+    .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+
     #topbar a {
         display: block;    
     }
