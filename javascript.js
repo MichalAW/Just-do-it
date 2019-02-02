@@ -1,9 +1,11 @@
-var toggle = document.getElementById("toggle");
+document.addEventListener("DOMContentLoaded", ready);
+  function ready() {
+    var toggle = document.getElementById("toggle");
 
 new Chart(document.getElementById("bar-chart"), {
     type: 'bar',
     data: {
-      labels: ["1", "2", "3", "4", "5", "6", "7","8","9","10"],
+      labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
       datasets: [
         {
           label: "Signups",
@@ -31,6 +33,4 @@ function toggleSidebar(){
 toggle.addEventListener("click", function(){
   toggleSidebar();
 });
-
-document.addEventListener("DOMContentLoaded", ready);
-  function ready(){};
+};

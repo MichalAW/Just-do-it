@@ -5,6 +5,14 @@
 body {
   background-color: #F8F8FF;
 }
+main {
+  max-width: 100%;
+  width: auto;
+}
+
+.app {
+  display: flex;
+}
 
 .container {
   width: 100%;
@@ -13,12 +21,12 @@ body {
   max-width: 1200px;
 }
 
-#topbar {
+.topbar {
   overflow: hidden;
   background-color: #FFFFFF;
 }
 
-#topbar a {
+.topbar li a {
   float: right;
   color: #f2f2f2;
   text-align: center;
@@ -27,12 +35,12 @@ body {
   font-size: 17px;
 }
 
-#topbar a:hover {
+.topbar li a:hover {
   background-color: #ddd;
   color: black;
 }
 
-#topbar a.active {
+.topbar li a.active {
   background-color: #4CAF50;
   color: white;
 }
@@ -44,27 +52,29 @@ body {
   max-width: 1200px;
 }
 
-#sidebar {
-  position: fixed;
-  width: 200px;
+.sidebar {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  width: 80px;
   height: 100%;
   background:#151719;
-  left:-200px;
   transition: all 500ms linear;
 }
 
-#sidebar.active {
-  left:0px;
+.sidebar.active {
+  width: 200px;
 }
 
-#sidebar ul li {
+.sidebar ul li {
+  white-space: nowrap;
   color: #FFFFFF;
   list-style: none;
   text-decoration: none;
   padding: 15px 10px;
 }
 
-#sidebar h3 {
+.sidebar h3 {
   color: #FFFFFF;
   padding: 15px 10px;
 }
@@ -73,14 +83,11 @@ h5 {
   border-bottom: 1px grey solid;
 }
 
-#sidebar .toggle-btn {
-  position: absolute;
-  left: 205px;
-  top: 20px;
+.sidebar .toggle-btn {
   cursor: pointer;
 } 
 
-#sidebar .toggle-btn span {
+.sidebar .toggle-btn span {
   display: block;
   width: 30px;
   height: 5px;
@@ -94,11 +101,6 @@ h5 {
   display: table;
   clear: both;
 }
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both; }
 
 [class*="col-"] {
     float: left;
