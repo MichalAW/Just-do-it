@@ -11,10 +11,6 @@ main {
   width: auto;
 }
 
-h5 {
-  border-bottom: 1px grey solid;
-}
-
 .app {
   display: flex;
 }
@@ -36,26 +32,31 @@ h5 {
     text-transform: uppercase;
 }
 
-.topbar li {
-    display: block;
-    float: left;
-}
+.topbar {
+	li {
+    	display: block;
+    	float: left;
+	}
 
-.topbar li a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
+	li {
 
-.topbar li a:hover {
-    color: black;
-}
+		a {
+		    float: right;
+		    color: #f2f2f2;
+		    text-align: center;
+		    padding: 0 16px;
+		    text-decoration: none;
+		    font-size: 17px;
+		}
 
-.topbar li a.active {
-    color: white;
+		&a:hover {
+    		color: black;
+		}
+
+		&a.active {
+		    color: white;
+		}
+	}
 }
 
 .sidebar {
@@ -68,33 +69,39 @@ h5 {
   transition: all 500ms linear;
 }
 
-.sidebar.active {
-  width: 200px;
+.sidebar{
+	&.active {
+  		width: 200px;
+  	}
+
+	ul li {
+	  	white-space: nowrap;
+	  	color: #FFFFFF;
+	  	list-style: none;
+	  	text-decoration: none;
+	  	padding: 15px 10px;
+	}
+
+	h3 {
+	  	color: #FFFFFF;
+	  	padding: 15px 10px;
+	}
+
+	.toggle-btn {
+		cursor: pointer;
+	} 
+
+	.toggle-btn span {
+		display: block;
+		width: 30px;
+		height: 5px;
+		background: #151719;
+		margin: 5px 0;
+	}
 }
 
-.sidebar ul li {
-  white-space: nowrap;
-  color: #FFFFFF;
-  list-style: none;
-  text-decoration: none;
-  padding: 15px 10px;
-}
-
-.sidebar h3 {
-  color: #FFFFFF;
-  padding: 15px 10px;
-}
-
-.sidebar .toggle-btn {
-  cursor: pointer;
-} 
-
-.sidebar .toggle-btn span {
-  display: block;
-  width: 30px;
-  height: 5px;
-  background: #151719;
-  margin: 5px 0;
+h5 {
+  border-bottom: 1px grey solid;
 }
 
 .row::before, 
