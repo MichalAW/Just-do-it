@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F8FF;
+}
+
+main {
+  max-width: 100%;
+  width: auto;
+}
+
+.app {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  max-width: 1200px;
+}
+
+.topbar {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+  float: right;
+  text-transform: uppercase;
+}
+
+.topbar li {
+  display: block;
+  float: left;
+}
+
+.topbar li a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topbar lia:hover {
+  color: black;
+}
+
+.topbar lia.active {
+  color: white;
+}
+
+.sidebar {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background: #151719;
+  transition: all 500ms linear;
+}
+
+.sidebar.active {
+  width: 200px;
+}
+
+.sidebar ul li {
+  white-space: nowrap;
+  color: #FFFFFF;
+  list-style: none;
+  text-decoration: none;
+  padding: 15px 10px;
+}
+
+.sidebar h3 {
+  color: #FFFFFF;
+  padding: 15px 10px;
+}
+
+.sidebar .toggle-btn {
+  cursor: pointer;
+}
+
+.sidebar .toggle-btn span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #151719;
+  margin: 5px 0;
+}
+
+h5 {
+  border-bottom: 1px grey solid;
+}
+
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 10px;
+}
+
+header, footer {
+  text-align: center;
+  Font-size: 20px;
+}
+
+@media (max-width: 1199px) {
+  /* For tablets: */
+  .aside {
+    float: none;
+    display: inline-block;
+  }
+  h3, h5 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  /*small devices*/
+  header {
+    height: auto;
+  }
+  #topbar, #sidebar {
+    display: block;
+    float: none;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #topbar a {
+    display: block;
+  }
+  #sidebar a {
+    display: block;
+  }
+}
+
+@media not all and (hover: none) {
+  #topbar a:hover {
+    background-color: #313234;
+    opacity: .5;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
