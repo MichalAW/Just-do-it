@@ -34,6 +34,7 @@ h5 {
     line-height: 41px;
     float: right;
     text-transform: uppercase;
+    position: relative;
 }
 
 .topbar ul li {
