@@ -4,9 +4,10 @@
 
 body {
   background-color: #F5F5F2;
+  color: #B8B8B8;
 }
-
-main {
+/*center for main*/
+.main {
   margin: 70px 30px 30px 230px;
   width: auto;
   background-color: #FFFFFF;
@@ -24,7 +25,7 @@ main {
 }
 
 h5 {
-  border-bottom: 1px grey solid;
+  border-bottom: 0.6px solid #B8B8B8;
 }
 
 .container {
@@ -32,15 +33,13 @@ h5 {
   margin: 0 auto;
   max-width: 1200px;
 }
-
+/*topbar*/
 .topbar {
-  color: #ffffff;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 41px;
-  text-transform: uppercase;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -53,7 +52,7 @@ h5 {
 }
 
 .topbar header img {
-  width: 20px;
+  width: 18px;
 }
 
 .topbar ul li {
@@ -63,21 +62,22 @@ h5 {
 
 .topbar ul li a {
     float: right;
-    color: #f2f2f2;
+    color: #F2F2F2;
     text-align: center;
     padding: 0 16px;
     text-decoration: none;
     font-size: 17px;
+    border-left: 0.5px solid #E3E3E3;
 }
 
 .topbar ul li a:hover {
-    color: black;
+    color: #E3E3E3;;
 }
 
 .topbar ul li a.active {
-    color: white;
+    color: #FFFF;
 }
-
+/*navigation bar*/
 .sidebar {
   overflow: hidden;
   position: fixed;
@@ -139,7 +139,7 @@ h5 {
   background: #999;
   margin: 5px 0;
 }
-
+/*hamburger button*/
 .button-container {
   display: inline-block;
   width: 100%;
@@ -148,6 +148,57 @@ h5 {
 
 .button-container h3 {
   display: inline;
+}
+/*data*/
+.data {
+  text-align: center;
+  border-bottom: 0.6px solid #B8B8B8;
+}
+
+.data p {
+  display: inline-block;
+  text-align: center;
+  border: 0.5px solid #B8B8B8;
+  padding: 8px;
+}
+
+.data button {
+  display: block;
+  float: right;
+}
+
+.data img {
+  background-color: #F58220;
+  text-align: center;
+  padding: 5px;
+}
+/*chart*/
+.chart p {
+  border-bottom: 0.5px solid #B8B8B8;
+}
+
+.chart p:first-child {
+  display: inline-block;
+}
+
+.chart p:last-child {
+  float: right;
+}
+/*button-links*/
+.button-links {
+  text-align: center;
+}
+
+.button-links a {
+  background-color: #F58220;
+  padding: 10px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/*links*/
+.links {
+  border-top: 0.6px solid #B8B8B8;
+  border-bottom: 0.6px solid #B8B8B8;
 }
 
 .row::before, 
@@ -163,19 +214,9 @@ h5 {
     padding: 10px;
 }
 
-header, footer, {
-    text-align: center;
-    Font-size: 20px;
-}
-
 @media (max-width: 1199px){
     /* For tablets: */
-    
-  .aside {
-      float: none;
-      display: inline-block;
-  }
-  
+
   h3, h5 {
       width: 100%;
   }
@@ -187,6 +228,10 @@ header, footer, {
         height: auto;    
     }
     
+    .main-center {
+      width: 100%;
+    }
+
     .topbar, .sidebar {
         display: block;
         float: none;
@@ -198,17 +243,32 @@ header, footer, {
     position: relative;
     }
 
-    #topbar a {
+    .topbar a {
         display: block;    
     }
   
-    #sidebar a {
+    .sidebar a {
         display: block;
     }
 }
 
+@media(max-width: 470px) {
+
+  .sidebar {
+    width: 80px;
+  }
+
+  .sidebar ul li a {
+    display: none;
+  }
+
+  .sidebar h3 {
+    display: none;
+  }
+}
+
 @media not all and (hover: none) {
-    #topbar a:hover {
+    .topbar a:hover {
         background-color: #313234;
         opacity: .5;
     }

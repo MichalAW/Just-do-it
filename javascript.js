@@ -21,7 +21,6 @@ new Chart(document.getElementById("bar-chart"), {
     options: {
       title: {
         display: true,
-        text: 'Earnings chart'
       }
     }
 });
