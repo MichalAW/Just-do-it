@@ -70,6 +70,14 @@ h5 {
   width: 80px;
 }
 
+.sidebar.active ul li a {
+  display: none;
+}
+
+.sidebar.active h3 {
+  display: none;
+}
+
 .sidebar ul li {
   white-space: nowrap;
   color: #FFFFFF;
@@ -98,6 +106,7 @@ h5 {
 
 .sidebar .toggle-btn {
   cursor: pointer;
+  float: right;
 } 
 
 .sidebar .toggle-btn span {
@@ -106,6 +115,16 @@ h5 {
   height: 5px;
   background: #999;
   margin: 5px 0;
+}
+
+.button-container {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+
+.button-container h3 {
+  display: inline;
 }
 
 .row::before, 
