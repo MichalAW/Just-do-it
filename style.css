@@ -7,8 +7,20 @@ body {
 }
 
 main {
-  padding-top: 70px;
-  width: 100%;
+  margin: 70px 30px 30px 230px;
+  width: auto;
+  background-color: #FFFFFF;
+  padding: 25px;
+}
+
+.main-center {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.center-block {
+  margin: 0 auto;
+  float: none;
 }
 
 h5 {
@@ -18,7 +30,6 @@ h5 {
 .container {
   width: 100%;
   margin: 0 auto;
-  background-color: #FFFFFF;
   max-width: 1200px;
 }
 
