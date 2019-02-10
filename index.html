@@ -10,104 +10,102 @@
       <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-	    <div class="app">
-	    	<section class="topbar">
-	    		<header>
+    	<section class="topbar">
+    		<header>
+            	<ul>
+		            <li><a class="active" href="#"><img src="./images/quit.png" alt="quit"></a></li>
+		            <li><a href="#"><img src="./images/profile.png" alt="profile"></a></li>
+		            <li><a href="#"><img src="./images/notification.png" alt="notification"></a></li>
+		            <li><a href="#"><img src="./images/wallet.png" alt="wallet"></a></li>
+	        	</ul>
+          	</header>
+	    </section>
+        <section class="sidebar" id="sidebar">
+          	<div>
+            	<div class=toggle-btn id="toggle">
+	              	<span></span>
+	              	<span></span>
+	              	<span></span>
+	            </div>
+	        	<div>
+	            <h3>Just do it</h3>
 	            	<ul>
-			            <li><a class="active" href="#"><img src="./images/quit.png" alt="quit"></a></li>
-			            <li><a href="#"><img src="./images/profile.png" alt="profile"></a></li>
-			            <li><a href="#"><img src="./images/notification.png" alt="notification"></a></li>
-			            <li><a href="#"><img src="./images/wallet.png" alt="wallet"></a></li>
-		        	</ul>
-	          	</header>
-		    </section>
-	        <section class="sidebar" id="sidebar">
-	          	<div>
-	            	<div class=toggle-btn id="toggle">
-		              	<span></span>
-		              	<span></span>
-		              	<span></span>
+	              		<li>
+		                	<img src="./images/general.png" alt="General">
+		                	<a href="#">General</a>
+	              		</li>
+	              		<li>
+			                <img src="./images/details.png" alt="Details">
+			                <a href="#">Details</a>
+			            </li>
+			            <li>
+			                <img src="./images/links.png" alt="Links">
+			                <a href="#">Links</a>
+			            </li>
+	              		<li>
+	                		<img src="./images/banners.png" alt="Banners">
+			                <a href="#">Banners</a>
+			            </li>
+			            <li>
+			                <img src="./images/data.png" alt="Personal data">
+			                <a href="#">Personal data</a>
+			            </li>
+			            <li>
+			                <img src="./images/payout.png" alt="Payout">
+			                <a href="#">Payout</a>
+			            </li>
+	              		<li>
+			                <i class="fas fa-undo-alt"></i>
+			                <a href="#">Postback</a>  
+			            </li>
+	            	</ul>
+	          	</div>
+	        </div>
+        </section>
+      	<main>
+	        <section class="container">
+		        <div class="first-main">
+		            <h5>General statistics</h5>
+		            <div class="row">
+			            <div class="col-sm-3 col-xs-12">
+			                <p>Visit signups 124</p> 
+			            </div>
+			            <div class="col-sm-3 col-xs-12">
+			                <p>FTD 445</p> 
+			            </div>
+			            <div class="col-sm-3 col-xs-12">
+			                <p>NET deposit 564</p> 
+			            </div>
+			            <div class="col-sm-3 col-xs-12">
+			                <p>Turn over 432</p> 
+		              	</div>
 		            </div>
-		        	<div>
-		            <h3>Just do it</h3>
-		            	<ul>
-		              		<li>
-			                	<img src="./images/general.png" alt="General">
-			                	<a href="#">General</a>
-		              		</li>
-		              		<li>
-				                <img src="./images/details.png" alt="Details">
-				                <a href="#">Details</a>
-				            </li>
-				            <li>
-				                <img src="./images/links.png" alt="Links">
-				                <a href="#">Links</a>
-				            </li>
-		              		<li>
-		                		<img src="./images/banners.png" alt="Banners">
-				                <a href="#">Banners</a>
-				            </li>
-				            <li>
-				                <img src="./images/data.png" alt="Personal data">
-				                <a href="#">Personal data</a>
-				            </li>
-				            <li>
-				                <img src="./images/payout.png" alt="Payout">
-				                <a href="#">Payout</a>
-				            </li>
-		              		<li>
-				                <i class="fas fa-undo-alt"></i>
-				                <a href="#">Postback</a>  
-				            </li>
-		            	</ul>
-		          	</div>
-		        </div>
+	          	</div>
+	          	<div class="second-main">
+		            <div class="row">
+		              	<div class="col-sm-12 col-xs-12">
+		                	<canvas id="bar-chart" width="800" height="450"></canvas>
+		              	</div>
+		            </div>
+	          	</div>
+	          	<div class="third-main">
+		            <div class="row">
+			            <div class="col-sm-4 col-xs-12">
+			                LINKS
+			            </div>
+			            <div class="col-sm-4 col-xs-12">
+			                LINKS
+			            </div>
+			            <div class="col-sm-4 col-xs-12">
+			                LINKS
+			            </div>
+		            </div>
+	          	</div>
 	        </section>
-	      	<main>
-		        <section class="container">
-			        <div class="first-main">
-			            <h5>General statistics</h5>
-			            <div class="row">
-				            <div class="col-sm-3 col-xs-12">
-				                <p>Visit signups 124</p> 
-				            </div>
-				            <div class="col-sm-3 col-xs-12">
-				                <p>FTD 445</p> 
-				            </div>
-				            <div class="col-sm-3 col-xs-12">
-				                <p>NET deposit 564</p> 
-				            </div>
-				            <div class="col-sm-3 col-xs-12">
-				                <p>Turn over 432</p> 
-			              	</div>
-			            </div>
-		          	</div>
-		          	<div class="second-main">
-			            <div class="row">
-			              	<div class="col-sm-12 col-xs-12">
-			                	<canvas id="bar-chart" width="800" height="450"></canvas>
-			              	</div>
-			            </div>
-		          	</div>
-		          	<div class="third-main">
-			            <div class="row">
-				            <div class="col-sm-4 col-xs-12">
-				                LINKS
-				            </div>
-				            <div class="col-sm-4 col-xs-12">
-				                LINKS
-				            </div>
-				            <div class="col-sm-4 col-xs-12">
-				                LINKS
-				            </div>
-			            </div>
-		          	</div>
-		        </section>
-		        <section class="container">
-		           	<footer>Footer</footer>
-		        </section>
-	      	</main>
-    	</div>
+	        <section class="container">
+	           	<footer>Footer</footer>
+	        </section>
+      	</main>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 	    <script src="./javascript.js"></script>
   	</body>
