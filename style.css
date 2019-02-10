@@ -57,16 +57,17 @@ h5 {
 
 .sidebar {
   overflow: hidden;
-  position: relative;
+  position: fixed;
   top: 0;
-  width: 80px;
-  height: 100%;
+  width: 200px;
+  height: 180%;
   background:#151719;
   transition: all 500ms linear;
+  z-index: 1;
 }
 
 .sidebar.active {
-  width: 200px;
+  width: 80px;
 }
 
 .sidebar ul li {
@@ -75,6 +76,19 @@ h5 {
   list-style: none;
   text-decoration: none;
   padding: 15px 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #999;
+}
+
+.sidebar ul {
+  padding-left: 10px;
+}
+
+.sidebar ul li img {
+  width: 20px; 
 }
 
 .sidebar h3 {
@@ -90,7 +104,7 @@ h5 {
   display: block;
   width: 30px;
   height: 5px;
-  background: #151719;
+  background: #999;
   margin: 5px 0;
 }
 
