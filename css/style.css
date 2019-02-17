@@ -30,7 +30,7 @@ body {
 }
 
 .main-center-border {
-  border-bottom: 0.6px solid #B8B8B8;
+  border-bottom: 1px solid #B8B8B8;
 }
 
 main section {
@@ -173,7 +173,6 @@ h5 {
 /*data*/
 .data {
   text-align: center;
-  border-bottom: 0.6px solid #B8B8B8;
 }
 
 .data p {
@@ -191,6 +190,10 @@ h5 {
   background-color: #F58220;
   text-align: center;
   padding: 5px;
+}
+
+.btn-refresh {
+  background-color: #DEB887;
 }
 
 /*chart*/
