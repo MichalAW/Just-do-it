@@ -29,11 +29,6 @@ body {
   margin: 0 auto;
 }
 
-.center-block {
-  margin: 0 auto;
-  float: none;
-}
-
 h5 {
   border-bottom: 0.6px solid #B8B8B8;
 }
@@ -101,7 +96,7 @@ h5 {
   z-index: 1;
 }
 
-sidebar.active {
+.sidebar.active {
   width: 80px;
 }
 
@@ -109,12 +104,12 @@ sidebar.active {
   display: none;
 }
 
-sidebar h3 {
+.sidebar h3 {
   color: #FFFFFF;
   padding: 15px 10px;
 }
 
-sidebar .active h3 {
+.sidebar .active h3 {
   display: none;
 }
 
