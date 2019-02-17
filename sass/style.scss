@@ -1,3 +1,5 @@
+@import "_icons.scss";
+
 * {
     box-sizing: border-box;
 }
@@ -188,17 +190,16 @@ sidebar {
   p {
     border-bottom: 0.5px solid #B8B8B8;
 
-    &:first-schild {
+    &:first-child {
       display: inline-block;
     }
 
-    &:last-schild {
+    &:last-child {
       float: right;
     }
   }
 }
 
-}
 /*button-links*/
 .button-links {
   text-align: center;
