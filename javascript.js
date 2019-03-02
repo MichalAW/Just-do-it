@@ -32,4 +32,21 @@ function toggleSidebar(){
 toggle.addEventListener("click", function(){
   toggleSidebar();
 });
-};
+}; 
+// obsluga sidebara
+var links = document.querySelectorAll('.sidebar a');
+var sections = document.querySelectorAll('main section');
+
+// nadanie eventu na wszystkich linkach z sidebara
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', function() {
+
+    // usuwanie klasy active ze wszystkich section
+    for (var i = 0; i < sections.length; i++) {
+      sections[i].classList.remove('active');
+    }
+
+    // nadawanie klasy active kliknietej z sidebara sekcji
+    document.querySelector(this.hash).classList.add('active');
+  });
+}
