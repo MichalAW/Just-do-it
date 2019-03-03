@@ -50,3 +50,19 @@ for (var i = 0; i < links.length; i++) {
     document.querySelector(this.hash).classList.add('active');
   });
 }
+
+//details datownik
+function refreshDate() {
+  var fromData = document.getElementById('from-data').value;
+  var toData = document.getElementById('to-data').value;
+  var tableDates = document.querySelectorAll('.details-table tr td:nth-child(2)');
+
+  for (var i = 0; i < tableDates.length; i++) {
+    console.log(tableDates[i].innerHTML);
+    if () {
+
+    }
+  }
+}
+
+document.querySelector('.btn-details').addEventListener('click', refreshDate);

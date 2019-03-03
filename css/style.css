@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @font-face {
   font-family: 'Glyphter';
   src: url("../../fonts/Glyphter.eot") format("embedded-opentype"), url("../../fonts/Glyphter.woff") format("woff"), url("../../fonts/Glyphter.ttf") format("truetype"), url("../../fonts/Glyphter.svg") format("svg");
@@ -151,8 +152,13 @@ h5 {
   display: none;
 }
 
+.sidebar.active .logo {
+  display: none;
+}
+
 .sidebar .logo {
-  padding: 20px 20px;
+  padding: 20px 10px;
+  display: inline;
 }
 
 .sidebar .active h3 {
@@ -197,7 +203,7 @@ h5 {
 .button-container {
   display: inline-block;
   width: 100%;
-  padding: 10px;
+  padding: 20px 10px 10px;
 }
 
 .button-container h3 {
@@ -238,6 +244,10 @@ h5 {
   color: #FFFFFF;
 }
 
+.details-table {
+  width: 100%;
+}
+
 /*calendar*/
 .calendar {
   padding: 4px;
@@ -255,7 +265,7 @@ h5 {
   background-color: #B8B8B8;
   position: absolute;
   height: 23px;
-  width: 0.7px;
+  width: 1px;
   left: 43%;
   top: 19%;
 }
