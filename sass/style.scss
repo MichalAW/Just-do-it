@@ -327,11 +327,6 @@ h5 {
     height: auto;    
   }
 
-  .sidebar .toggle-btn {
-    margin-left: 5px;
-    float: none;
-  }
-
   .main-center {
     width: 100%;
   }
@@ -342,6 +337,11 @@ h5 {
 
   .topbar {
     position: fixed;
+  }
+
+  .sidebar .toggle-btn {
+    margin-left: 5px;
+    float: none;
   }
 
   .sidebar {

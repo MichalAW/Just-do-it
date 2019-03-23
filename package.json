@@ -1,5 +1,5 @@
 {
-  "name": "Individual-project",
+  "name": "12.Individual-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -21,15 +21,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MichalAW/Individual-project.git"
+    "url": "https://github.com/MichalAW/12.Individual-project.git"
   },
   "keywords": [],
   "author": "MichalAW michal.wanta@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MichalAW/Individual-project/issues"
+    "url": "https://github.com/MichalAW/12.Individual-project/issues"
   },
-  "homepage": "https://github.com/MichalAW/Individual-project#readme",
+  "homepage": "https://github.com/MichalAW/12.Individual-project#readme",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.3",

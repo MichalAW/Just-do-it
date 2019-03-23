@@ -59,9 +59,9 @@ function refreshDate() {
 
   for (var i = 0; i < tableDates.length; i++) {
     console.log(tableDates[i].innerHTML);
-    if () {
+    // if () {
 
-    }
+    // }
   }
 }+
 
