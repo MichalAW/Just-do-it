@@ -6,6 +6,7 @@ $paragraph-color: #333333;
 $border-color: #E3E3E3;
 $button-color: #F58220;
 $white-color: #FFFFFF;
+$hover-refresh-color: #FFA200;
 
 * {
     box-sizing: border-box;
@@ -40,20 +41,23 @@ h6 {
   font-family: $roboto-font;
   font-weight: 700;
 }
-/*paragraph*/
+// paragraph
 p {
   font-size: 16px;
-  line-height: 42px;
   color: $headline-color;
   font-family: $roboto-font;
   font-weight: 700;
 }
 
-/*center for main*/
+// center for main
 .main {
-  margin: 70px 30px 30px 230px;
+  margin: 10px 30px 30px 230px;
   width: auto;
   background-color: #FFFFFF;
+}
+
+.main-margin-top {
+  margin-top: 70px;
 }
 
 .main-center {
@@ -63,6 +67,10 @@ p {
 
 .main-center-border {
   border-bottom: 1px solid $border-color;
+}
+
+main.fullwidth .main {
+  margin-left:  110px;
 }
 
 main section {
@@ -83,7 +91,7 @@ h5 {
   margin: 0 auto;
   max-width: 1200px;
 }
-/*topbar*/
+// topbar
 .topbar {
   font-family: Montserrat;
   font-size: 14px;
@@ -95,6 +103,7 @@ h5 {
   left: 0;
   background-color: #FFFF;
   border-bottom: 1px solid $border-color;
+  z-index: 1;
 }
 
 .topbar header {
@@ -110,19 +119,23 @@ h5 {
     li {
       display: block;
       float: left;
-
       a {
         float: right;
-        color: #F2F2F2;
         text-align: center;
         padding: 0 16px;
         text-decoration: none;
-        font-size: 17px;
-        border-left: 0.5px solid #E3E3E3;
+        border-left: 0.5px solid $border-color;
+        font-size: 20px;
+        line-height: 42px;
+        color: $paragraph-color;
+        font-family: "Roboto";
+        font-weight: 400;
+        span {
+          margin-right: 7px;
+        }
       }
-
       &:hover {
-       color: #E3E3E3;;
+       color: $border-color;;
       }
 
       &:active {
@@ -131,8 +144,7 @@ h5 {
     }
   }
 }
-
-/*navigation bar*/
+// navigation bar
 .sidebar {
   overflow: hidden;
   position: fixed;
@@ -241,6 +253,11 @@ h5 {
   height: 40px;
   border-radius: 3px;
   background-color: $button-color;
+  border: none;
+  &:hover {
+    background-color: $hover-refresh-color;
+    cursor: pointer;
+  }
   span {
     color: $white-color;
   }
@@ -250,7 +267,7 @@ h5 {
   width: 100%;
 }
 
-/*calendar*/
+// calendar
 .calendar {
   padding: 4px;
   border: 0.6px solid #B8B8B8;
@@ -270,13 +287,17 @@ h5 {
     left: 43%;
     top: 19%;
 }
-
-/*chart*/
+// chart
 .chart {
   p {
     border-bottom: 1px solid $border-color;
+    line-height: 42px;
     span  {
       float: right;
+      font-weight: 300;
+      color: $paragraph-color;
+      font-size: 16px;
+      line-height: 42px;
     }
   }
 }
@@ -294,20 +315,31 @@ h5 {
 /*links*/
 .links {
   border-top: 1px solid $border-color;
+   p {
+    margin-bottom: 0;
+  }
+}
+
+.link-item {
   border-bottom: 1px solid $border-color;
+  padding: 8px 0;
+  &:hover {
+    background-color: #F1F3F3;
+    cursor: pointer;
+  }
 }
 
 .row::before, 
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+.row::after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
 }
 
-[class*="col-"] {
-    float: left;
-    min-height: 1px;
-    padding: 10px;
+[class*="col-"] { 
+  float: left; 
+  min-height: 1px; 
+  padding: 10px; 
 }
 
 @media (max-width: 1199px){
@@ -327,12 +359,13 @@ h5 {
     height: auto;    
   }
 
-  .main-center {
-    width: 100%;
+  main.fullwidth .main, 
+  .main { 
+    margin-left: 90px; 
   }
 
-  .main {
-    margin-left: 90px; 
+  .main-center {
+    width: 100%;
   }
 
   .topbar {
@@ -347,11 +380,8 @@ h5 {
   .sidebar {
     display: block;
     float: none;
-  }
-  
-  .sidebar {
     width: 60px;
-    height: auto;
+    height: 100%;
   }
 
   .sidebar .logo {
@@ -363,7 +393,8 @@ h5 {
   }
 
   .sidebar.active {
-    width: 100%;
+    width: auto;
+    padding-right: 15px;
     ul li a {
       display: inline-block;
     }
@@ -376,7 +407,7 @@ h5 {
 
 @media(max-width: 470px) {
   .sidebar {
-    width: 80px;
+    width: 60px;
   }
 
   .sidebar ul li a {
