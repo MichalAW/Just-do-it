@@ -8,6 +8,11 @@
   font-family: 'Glyphter';
 }
 
+@font-face {
+  font-family: 'Glyphter';
+  src: url("../../fonts/Glyphter.eot") format("embedded-opentype"), url("../../fonts/Glyphter.woff") format("woff"), url("../../fonts/Glyphter.ttf") format("truetype"), url("../../fonts/Glyphter.svg") format("svg");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -171,7 +176,7 @@ h5 {
   height: 180%;
   background: #151719;
   transition: all 500ms linear;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sidebar.active {
@@ -268,7 +273,7 @@ h5 {
 .data p {
   display: inline-block;
   text-align: center;
-  border: 0.5px solid #B8B8B8;
+  border: .5px solid #B8B8B8;
   padding: 8px;
 }
 
@@ -305,7 +310,7 @@ h5 {
 
 .calendar {
   padding: 4px;
-  border: 0.6px solid #B8B8B8;
+  border: .6px solid #B8B8B8;
   display: inline-block;
   position: relative;
   border-radius: 4px;
@@ -368,19 +373,6 @@ h5 {
   cursor: pointer;
 }
 
-.row::before,
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-[class*="col-"] {
-  float: left;
-  min-height: 1px;
-  padding: 10px;
-}
-
 @media (max-width: 1199px) {
   /* For tablets: */
   .sidebar .logo {
@@ -431,6 +423,19 @@ h5 {
   }
   .sidebar.active h3 {
     display: inline-block;
+  }
+  .bg-alpha {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  .bg-alpha.active {
+    display: block;
   }
 }
 

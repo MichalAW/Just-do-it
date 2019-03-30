@@ -7,6 +7,7 @@ var sections = document.querySelectorAll('main section');
 function toggleSidebar(){
   document.getElementById('sidebar').classList.toggle('active');
   document.querySelector('main').classList.toggle('fullwidth');
+  document.querySelector('.bg-alpha').classList.toggle('active');
 }
 
 toggle.addEventListener("click", function(){
