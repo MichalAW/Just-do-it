@@ -13,14 +13,19 @@ $white-color: #FFFFFF;
 $hover-refresh-color: #FFA200;
 $name-color: #56819f;
 $header-color: #808080;
-
+$body-background-color: #F5F5F2;
+$body-color: #B8B8B8;
+$sidebar-background: #151719;
+$sidebar-color-a: #999;
+$background-line-color: #F1F3F3;
+$topbar-hover-color: #313234;
 * {
     box-sizing: border-box;
 }
 
 body {
-  background-color: #F5F5F2;
-  color: #B8B8B8;
+  background-color:$body-background-color;
+  color: $body-color;
 }
 
 main section {
@@ -46,6 +51,11 @@ h6 {
   color: $headline-color;
   font-family: $roboto-font;
   font-weight: 700;
+  padding-top: 42px;
+}
+//chart
+canvas {
+  padding-bottom: 45px;
 }
 // paragraph
 p {
@@ -89,7 +99,7 @@ main section.active {
 
 h5 {
   border-bottom: 1px solid $border-color;
-  padding: 16px;
+  padding: 1px 16px;
 }
 
 .container {
@@ -114,7 +124,6 @@ h5 {
 
 .topbar header {
   float: right;
-  padding: 6px 0;
 }
 
 .topbar header img {
@@ -130,7 +139,7 @@ h5 {
       a {
         float: right;
         text-align: center;
-        padding: 0 16px;
+        padding: 6px 16px;
         text-decoration: none;
         border-left: .5px solid $border-color;
         font-size: 20px;
@@ -165,7 +174,7 @@ h5 {
       .topbar-wallet {
         font-size: 20px;
         line-height: 42px;
-        color: #333333;
+        color: $paragraph-color;
         font-family: $roboto-font;
         font-weight: 400;
       }
@@ -179,7 +188,7 @@ h5 {
   top: 0;
   width: 200px;
   height: 180%;
-  background: #151719;
+  background: $sidebar-background;
   transition: all 500ms linear;
   z-index: 2;
 }
@@ -219,7 +228,7 @@ h5 {
 
       a {
         text-decoration: none;
-        color: #999;
+        color: $sidebar-color-a;
       }
     }
   }
@@ -237,7 +246,7 @@ h5 {
       display: block;
       width: 30px;
       height: 5px;
-      background: #999;
+      background: $sidebar-color-a;
       margin: 5px 0;
     }
   }
@@ -283,7 +292,7 @@ h5 {
 .data p {
   display: inline-block;
   text-align: center;
-  border: .5px solid #B8B8B8;
+  border: .5px solid $body-color;
   padding: 8px;
 }
 
@@ -292,7 +301,7 @@ h5 {
 }
 
 .data img {
-  background-color: #F58220;
+  background-color: $button-color;
   text-align: center;
   padding: 5px;
 }
@@ -319,7 +328,7 @@ h5 {
 // calendar
 .calendar {
   padding: 4px;
-  border: .6px solid #B8B8B8;
+  border: .6px solid $body-color;
   display: inline-block;
   position: relative;
   border-radius: 4px;
@@ -329,7 +338,7 @@ h5 {
 }
 
 .vertical-line {
-    background-color: #B8B8B8;
+    background-color: $body-color;
     position: absolute;
     height: 23px;
     width: 1px;
@@ -341,6 +350,7 @@ h5 {
   p {
     border-bottom: 1px solid $border-color;
     line-height: 42px;
+    margin-top: 23px;
     span  {
       float: right;
       font-weight: 300;
@@ -355,9 +365,9 @@ h5 {
 .button-links {
   text-align: center;
    a {
-    background-color: #F58220;
+    background-color: $button-color;
     padding: 10px;
-    color: #FFFFFF;
+    color: $white-color;
     text-decoration: none;
   }
 }
@@ -373,7 +383,7 @@ h5 {
   border-bottom: 1px solid $border-color;
   padding: 8px 0;
   &:hover {
-    background-color: #F1F3F3;
+    background-color: $background-line-color;
     cursor: pointer;
   }
 }
@@ -442,7 +452,7 @@ h5 {
 
   .bg-alpha {
     display: none;
-    position: absolute;  
+    position: fixed;  
     left: 0;
     top: 0;
     width: 100%;
@@ -471,7 +481,7 @@ h5 {
 
 @media not all and (hover: none) {
   .topbar a:hover {
-    background-color: #313234;
+    background-color: $topbar-hover-color;
     opacity: .5;
   }
 }
