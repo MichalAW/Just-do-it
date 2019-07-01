@@ -1,0 +1,56 @@
+// main
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $body-background-color;
+    color: $body-color;
+}
+
+main section {
+    display: none;
+}
+
+main section.active {
+    display: block;
+}
+
+// center for main
+.main {
+    margin: 10px 30px 30px 230px;
+    width: auto;
+    background-color: $white-color;
+}
+
+.main-margin-top {
+    margin-top: 70px;
+}
+
+.main-center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-center-border {
+    border-bottom: 1px solid $border-color;
+}
+
+main.fullwidth .main {
+    margin-left:  110px;
+}
+
+main section {
+    display: none;
+}
+
+main section.active {
+    display: block;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}

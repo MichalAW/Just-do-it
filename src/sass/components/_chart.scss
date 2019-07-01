@@ -1,0 +1,19 @@
+// chart
+canvas {
+  padding-bottom: 45px;
+}
+
+.chart {
+    p {
+        border-bottom: 1px solid $border-color;
+        line-height: 42px;
+        margin-top: 23px;
+        span  {
+            float: right;
+            font-weight: 300;
+            color: $paragraph-color;
+            font-size: 16px;
+            line-height: 42px;
+        }
+    }
+}

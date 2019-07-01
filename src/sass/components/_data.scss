@@ -1,0 +1,41 @@
+/*data*/
+.data {
+    text-align: center;
+    padding: 35px 0;
+}
+
+.data p {
+    display: inline-block;
+    text-align: center;
+    border: .5px solid $body-color;
+    padding: 8px;
+}
+
+.data button {
+    display: inline-block;
+}
+
+.data img {
+    background-color: $button-color;
+    text-align: center;
+    padding: 5px;
+}
+
+.btn-refresh {
+    width: 41px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: $button-color;
+    border: none;
+    &:hover {
+        background-color: $hover-refresh-color;
+        cursor: pointer;
+  }
+  span {
+    color: $white-color;
+    }
+}
+
+.details-table {
+    width: 100%;
+}

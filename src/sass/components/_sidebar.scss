@@ -1,0 +1,154 @@
+
+// navigation bar
+.sidebar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 180%;
+  background: $sidebar-background;
+  transition: all 500ms linear;
+  z-index: 2;
+}
+
+.sidebar.active {
+  width: 80px;
+}
+
+.sidebar.active ul li a {
+  display: none;
+}
+
+.sidebar.active .logo {
+  display: none;
+}
+
+.sidebar {
+  .logo {
+    padding: 20px 10px;
+    display: inline;
+  }
+  .active h3 {
+    display: none;
+  }
+}
+
+.sidebar {
+  ul {
+    padding-left: 10px;
+
+    li {
+      white-space: nowrap;
+      color: $white-color;
+      list-style: none;
+      text-decoration: none;
+      padding: 15px 10px;
+
+      a {
+        text-decoration: none;
+        color: $sidebar-color-a;
+      }
+    }
+  }
+}
+
+.sidebar ul li img {
+  width: 20px; 
+}
+
+.sidebar {
+  .toggle-btn {
+    cursor: pointer;
+    float: right;
+    span {
+      display: block;
+      width: 30px;
+      height: 5px;
+      background: $sidebar-color-a;
+      margin: 5px 0;
+    }
+  }
+} 
+
+.your-manager {
+  h5 {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 42px;
+    color: $header-color;
+    font-family: $roboto-font;
+    font-weight: 500;
+    border-top: .5px solid $border-color;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 42px;
+    color: $name-color;
+    font-family: $roboto-font;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1199px) {
+
+    /* For tablets: */
+    .sidebar .logo {
+        width: 100%;
+    }
+
+    h5 {
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    /*small devices*/
+    .sidebar .toggle-btn {
+        margin-left: 5px;
+        float: none;
+    }
+
+    .sidebar {
+        display: block;
+        float: none;
+        width: 60px;
+        height: 100%;
+    }
+
+    .sidebar .logo {
+        display: none;
+    }
+
+    .sidebar a {
+        display: none;
+    }
+
+    .sidebar.active {
+        width: auto;
+        padding-right: 15px;
+
+        ul li a {
+            display: inline-block;
+        }
+
+        h3 {
+            display: inline-block;
+        }
+    }
+}
+
+@media(max-width: 470px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar ul li a {
+        display: none;
+    }
+
+    .sidebar .logo {
+        display: none;
+    }
+}
