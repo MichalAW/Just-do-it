@@ -1,13 +1,13 @@
 // calendar
 .calendar {
     padding: 4px;
-    border: .6px solid $body-color;
+    border: 0.6px solid $body-color;
     display: inline-block;
     position: relative;
     border-radius: 4px;
-}
-.calendar input {
-    border: none;
+    input {
+        border: none;
+    }
 }
 
 .vertical-line {

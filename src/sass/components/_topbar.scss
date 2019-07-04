@@ -1,76 +1,75 @@
 // topbar
 .topbar {
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 41px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: $white-color;
-  border-bottom: 1px solid $border-color;
-  z-index: 1;
-}
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 41px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: $white-color;
+	border-bottom: 1px solid $border-color;
+	z-index: 1;
 
-.topbar header {
-  float: right;
-}
+	header {
+		float: right;
 
-.topbar header img {
-  width: 18px;
-}
+		img {
+			width: 18px;
+		}
+	}
 
-.topbar {
-  ul {
-    li {
-      display: block;
-      float: left;
+	ul {
 
-      a {
-        float: right;
-        text-align: center;
-        padding: 6px 16px;
-        text-decoration: none;
-        border-left: .5px solid $border-color;
-        font-size: 20px;
-        line-height: 42px;
-        color: $paragraph-color;
-        font-family: $roboto-font;
-        font-weight: 400;
+		li {
+			display: block;
+			float: left;
 
-        span {
-          margin-right: 9px;
-          font-size: 16px;
-        }
+			a {
+				float: right;
+				text-align: center;
+				padding: 6px 16px;
+				text-decoration: none;
+				border-left: .5px solid $border-color;
+				font-size: 20px;
+				line-height: 42px;
+				color: $paragraph-color;
+				font-family: $roboto-font;
+				font-weight: 400;
 
-        &:hover {
-          background-color: $border-color;
-          color: $white-color;
-        }
+				span {
+					margin-right: 9px;
+					font-size: 16px;
+				}
 
-        &:active {
-          color: $white-color;
-        }
-      }
+				&:hover {
+					background-color: $border-color;
+					color: $white-color;
+				}
 
-      .topbar-paragraph {
-        font-size: 13px;
-        line-height: 42px;
-        color: $name-color;
-        font-family: $roboto-font;
-        font-weight: 300;
-      }
+				&:active {
+					color: $white-color;
+				}
+			}
 
-      .topbar-wallet {
-        font-size: 20px;
-        line-height: 42px;
-        color: $paragraph-color;
-        font-family: $roboto-font;
-        font-weight: 400;
-      }
-    }
-  }
+			.topbar-paragraph {
+				font-size: 13px;
+				line-height: 42px;
+				color: $name-color;
+				font-family: $roboto-font;
+				font-weight: 300;
+			}
+
+			.topbar-wallet {
+				font-size: 20px;
+				line-height: 42px;
+				color: $paragraph-color;
+				font-family: $roboto-font;
+				font-weight: 400;
+			}
+		}
+	}
 }
 
 @media(max-width: 767px) {

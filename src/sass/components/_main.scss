@@ -10,10 +10,9 @@ body {
 
 main section {
     display: none;
-}
-
-main section.active {
-    display: block;
+    &.active {
+        display: block;
+    }
 }
 
 // center for main
@@ -39,15 +38,6 @@ main section.active {
 main.fullwidth .main {
     margin-left:  110px;
 }
-
-main section {
-    display: none;
-}
-
-main section.active {
-    display: block;
-}
-
 
 .container {
     width: 100%;

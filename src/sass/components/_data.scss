@@ -2,23 +2,23 @@
 .data {
     text-align: center;
     padding: 35px 0;
-}
 
-.data p {
-    display: inline-block;
-    text-align: center;
-    border: .5px solid $body-color;
-    padding: 8px;
-}
+    p {
+        display: inline-block;
+        text-align: center;
+        border: .5px solid $body-color;
+        padding: 8px;
+    }
 
-.data button {
-    display: inline-block;
-}
+    button {
+        display: inline-block;
+    }
 
-.data img {
-    background-color: $button-color;
-    text-align: center;
-    padding: 5px;
+    img {
+        background-color: $button-color;
+        text-align: center;
+        padding: 5px;
+    }
 }
 
 .btn-refresh {
@@ -30,8 +30,9 @@
     &:hover {
         background-color: $hover-refresh-color;
         cursor: pointer;
-  }
-  span {
+    }
+    
+    span {
     color: $white-color;
     }
 }
