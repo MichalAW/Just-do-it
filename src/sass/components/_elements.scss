@@ -1,9 +1,13 @@
 /*headlines*/
-h5 {
+%headers {
     font-size: 16px;
-    line-height: 42px;
     color: $headline-color;
     font-family: $roboto-font;
+}
+
+h5 {
+    @extend %headers;
+    line-height: 42px;
     font-weight: 500;
     text-transform: uppercase;
     border-bottom: 1px solid $border-color;
@@ -11,18 +15,14 @@ h5 {
 }
 
 h6 {
-    font-size: 16px;
+    @extend %headers;
     line-height: 42px;
-    color: $headline-color;
-    font-family: $roboto-font;
     font-weight: 700;
     padding-top: 42px;
 }
 
 // paragraph
 p {
-    font-size: 16px;
-    color: $headline-color;
-    font-family: $roboto-font;
+    @extend %headers;
     font-weight: 700;
 }
