@@ -1,39 +1,46 @@
 /*links*/
 .links {
-    border-top: 1px solid $border-color;
-    p {
-        margin-bottom: 0;
-    }
+  border-top: 1px solid $border-color;
+  p {
+    margin-bottom: 0;
+  }
+  .links-color {
+    color: $hover-refresh-color;
+  }
 }
 
 .link-item {
-    border-bottom: 1px solid $border-color;
-    padding: 8px 0;
-    &:hover {
-        background-color: $background-line-color;
-        cursor: pointer;
-    }
+  border-bottom: 1px solid $border-color;
+  padding: 8px 0;
+  &:hover {
+    background-color: $background-line-color;
+    cursor: pointer;
+  }
 }
 
 /*hamburger button*/
 .button-container {
-    display: inline-block;
-    width: 100%;
-    padding: 20px 10px 10px;
-    
-    h3 {
-        display: inline;
-    }
+  display: inline-block;
+  width: 100%;
+  padding: 20px 10px 10px;
+
+  h3 {
+    display: inline;
+  }
 }
 
 /*button-links*/
 .button-links {
-    text-align: center;
+  text-align: center;
 
-    a {
-        background-color: $button-color;
-        padding: 10px;
-        color: $white-color;
-        text-decoration: none;
-    }
+  a {
+    background-color: $button-color;
+    padding: 10px;
+    color: $white-color;
+    text-decoration: none;
+  }
+
+  .btn {
+    margin: 20px;
+  }
 }
