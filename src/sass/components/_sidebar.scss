@@ -35,7 +35,8 @@
       color: $white-color;
       list-style: none;
       text-decoration: none;
-      padding: 15px 10px;
+      display: flex;
+      align-items: center;
 
       &:hover {
         background-color: $hover-refresh-color;
@@ -46,6 +47,8 @@
       }
 
       a {
+        flex: 1;
+        padding: 15px 10px;
         text-decoration: none;
         color: $sidebar-color-a;
       }
