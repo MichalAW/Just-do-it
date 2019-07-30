@@ -1,20 +1,24 @@
 // calendar
 .calendar {
-    padding: 4px;
-    border: .6px solid $body-color;
-    display: inline-block;
-    position: relative;
-    border-radius: 4px;
-    input {
-        border: none;
-    }
+  padding: 4px;
+  border: 0.6px solid $body-color;
+  display: inline-block;
+  position: relative;
+  border-radius: 4px;
+  input {
+    border: none;
+  }
+
+  .icon-calendar {
+    margin-right: 30px;
+  }
 }
 
 .vertical-line {
-    background-color: $body-color;
-    position: absolute;
-    height: 23px;
-    width: 1px;
-    left: 43%;
-    top: 19%;
+  background-color: $body-color;
+  position: absolute;
+  height: 23px;
+  width: 1px;
+  left: 43%;
+  top: 19%;
 }
