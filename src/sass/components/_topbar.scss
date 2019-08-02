@@ -126,6 +126,15 @@
   }
 }
 
+@media (max-width: 470px) {
+  .topbar {
+    .wallet,
+    .notification {
+      display: none;
+    }
+  }
+}
+
 @media not all and (hover: none) {
   .topbar a:hover {
     background-color: $topbar-hover-color;

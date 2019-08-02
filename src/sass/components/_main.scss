@@ -44,3 +44,9 @@ main.fullwidth .main {
   margin: 0 auto;
   max-width: 1200px;
 }
+
+@media (max-width: 470px) {
+  .chart-none {
+    display: none;
+  }
+}
