@@ -13,17 +13,6 @@
     "format": "prettier --write \"src/**/*.{js,html,scss}\"",
     "lint": "eslint src/"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/MichalAW/12.Individual-project.git"
@@ -53,7 +42,7 @@
   },
   "dependencies": {
     "any-observable": "^0.4.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "popper.js": "^1.14.6"
   }
 }

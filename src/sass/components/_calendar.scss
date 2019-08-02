@@ -5,6 +5,7 @@
   display: inline-block;
   position: relative;
   border-radius: 4px;
+  margin-bottom: 10px;
   input {
     border: none;
   }
@@ -21,4 +22,23 @@
   width: 1px;
   left: 43%;
   top: 19%;
+}
+
+@media (max-width: 799px) {
+  .calendar {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: none;
+
+    input {
+      text-align: center;
+      border: 0.6px solid #b8b8b8;
+    }
+
+    span {
+      display: none;
+    }
+  }
 }
