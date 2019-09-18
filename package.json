@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "any-observable": "^0.4.0",
+    "heroku": "^7.30.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.14.6"
   }
