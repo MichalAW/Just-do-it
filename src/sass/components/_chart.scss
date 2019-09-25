@@ -4,16 +4,16 @@ canvas {
 }
 
 .chart {
-    p {
-        border-bottom: 1px solid $border-color;
-        line-height: 42px;
-        margin-top: 23px;
-        span  {
-            float: right;
-            font-weight: 300;
-            color: $paragraph-color;
-            font-size: 16px;
-            line-height: 42px;
-        }
+  p {
+    border-bottom: 1px solid $border-color;
+    line-height: 42px;
+    margin-top: 23px;
+    span {
+      float: right;
+      font-weight: 300;
+      color: $paragraph-color;
+      font-size: 16px;
+      line-height: 42px;
     }
+  }
 }
