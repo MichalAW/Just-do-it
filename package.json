@@ -1,5 +1,5 @@
 {
-  "name": "12.Individual-project",
+  "name": "12.Just-do-it",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MichalAW/Individual-project.git"
+    "url": "https://github.com/MichalAW/Just-do-it.git"
   },
   "keywords": [],
   "author": "MichalAW michal.wanta@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MichalAW/Individual-project/issues"
+    "url": "https://github.com/MichalAW/Just-do-it/issues"
   },
-  "homepage": "https://github.com/MichalAW/Individual-project#readme",
+  "homepage": "https://github.com/MichalAW/Just-do-it#readme",
   "devDependencies": {
     "lint-staged": "^8.1.0",
     "parcel-bundler": "^1.11.0",
