@@ -1,5 +1,5 @@
-# Individual-project
-Projekt indywidualny zakładający utworzenia designu
+# Just-do-it
+Individual project called "Just od it"
 # repo -> https://github.com/MichalAW/Individual-project.git
 # link -> https://michalaw.github.io/Individual-project/
 # Uruchomienie
