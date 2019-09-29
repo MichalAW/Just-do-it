@@ -7,22 +7,22 @@
     "prewatch": "npm run clean",
     "watch": "parcel src/index.html --open --no-autoinstall --port 8080",
     "prebuild": "npm run clean",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url /docs/",
     "clean": "rimraf dist",
     "code-quality": "npm run format && npm run lint",
     "format": "prettier --write \"src/**/*.{js,html,scss}\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MichalAW/12.Individual-project.git"
+    "url": "https://github.com/MichalAW/Individual-project.git"
   },
   "keywords": [],
   "author": "MichalAW michal.wanta@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MichalAW/12.Individual-project/issues"
+    "url": "https://github.com/MichalAW/Individual-project/issues"
   },
-  "homepage": "https://github.com/MichalAW/12.Individual-project#readme",
+  "homepage": "https://github.com/MichalAW/Individual-project#readme",
   "devDependencies": {
     "lint-staged": "^8.1.0",
     "parcel-bundler": "^1.11.0",
