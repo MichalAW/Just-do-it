@@ -6,5 +6,5 @@ Individual project called "Just od it"
 # link -> https://michalaw.github.io/Just-do-it/
 
 # Script
-1.Download repository
+1. Download repository
 2. Launch script "watch" to visit site
