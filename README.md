@@ -1,5 +1,5 @@
 # Just-do-it
-Individual project called "Just od it"
+12. Individual project called "Just od it"
 
 # repo -> https://github.com/MichalAW/Just-do-it.git
 
